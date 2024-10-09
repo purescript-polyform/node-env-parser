@@ -1,0 +1,29 @@
+package:
+  dependencies:
+    - arrays
+    - identity
+    - maybe
+    - ordered-collections
+    - polyform
+    - polyform-batteries-core
+    - prelude
+    - typelevel-prelude
+  name: batteries-env
+  test:
+    main: Test.Main
+    dependencies:
+      - console
+      - effect
+workspace:
+  extraPackages:
+    js-unsafe-stringify:
+      git: https://github.com/srghma/purescript-js-unsafe-stringify.git
+      ref: master
+    polyform:
+      git: https://github.com/srghma/polyform.git
+      ref: master
+    polyform-batteries-core:
+      git: https://github.com/srghma/batteries-core.git
+      ref: master
+  packageSet:
+    registry: 60.4.0
